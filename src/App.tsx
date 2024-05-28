@@ -15,7 +15,7 @@ const App = () => {
         setInputValue(event.target.value);
     };
 
-    const sayHello = () => {
+    const addTask = () => {
         const tasks = [...allTasks, {value: inputValue, id: Math.floor(Math.random() * 1000)}];
         setAllTasks(tasks);
         setInputValue('');
@@ -28,7 +28,7 @@ const App = () => {
 
     return (
         <>
-            <AddTask OnClickMe={sayHello} onHandleChange={handleChange} inputValue={inputValue} />
+            <AddTask OnClickMe={addTask} onHandleChange={handleChange} inputValue={inputValue} />
             {allTasks.map((task) => (
                 <Task text={task.value} key={task.id} onDeleteMe={() => deleteTasks(task.id)} />
             ))}
