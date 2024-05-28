@@ -1,0 +1,29 @@
+.task {
+    display: flex;
+    width: 60%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px #00ffff;
+    margin-bottom: 10px;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    button {
+        padding: 10px 15px;
+        border: 2px solid #ccc;
+        background: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
